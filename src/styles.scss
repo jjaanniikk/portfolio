@@ -1,7 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "bootstrap/scss/bootstrap";
+html{
+    height: 100%;
+}
 
 body {
-    background-color: #d0e9fb !important;
+    background-image: url('assets/sky.jpeg');
     padding-top: 15vh; 
+    height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
