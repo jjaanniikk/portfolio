@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  showMenuItems = false;
 
+  constructor() {}
+
+  toggleNav() {
+    this.showMenuItems = !this.showMenuItems;
+  }
 }
