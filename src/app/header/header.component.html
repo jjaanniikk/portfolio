@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container py-2">
     <div class="col-sm-2">
-      <a class="navbar-brand" [routerLink]="['/aboutme']">Portfolio Janik K.</a>
+      <a class="navbar-brand" [routerLink]="['/aboutme']">Portfolio</a>
     </div>
     <button
       class="navbar-toggler"
@@ -15,7 +15,7 @@
       class="collapse navbar-collapse justify-content-end col-sm-2"
       id="navbarNavAltMarkup"
     >
-      <div class="navbar-nav">
+      <div class="navbar-nav"  (click)="this.toggleNav()">
         <a class="nav-item nav-link" [routerLink]="['/']">Home</a>
         <a class="nav-item nav-link" [routerLink]="['/work']">Work</a>
         <a class="nav-item nav-link" [routerLink]="['/life']">Life</a>

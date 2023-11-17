@@ -1,10 +1,23 @@
 <div class="container min-vh-100">
     <div class="row">
+      <div class="col-12">
+        <h3 class="display-4">Privatleben</h3>
+      </div>
       <div class="col-12 col-md-6 left">
         <img src="https://www.inova.ch/fileadmin/_processed_/2/6/csm_Inova14580_sw_deec123641.jpg" id="life_image" class="img-rounded float-left" alt="Janik Kämpfer life">
       </div>
       <div class="col-12 col-md-6 right">
-        2 of 2
+        <h4 class="display-5">Fussball</h4>
+        <h4 class="display-5">Aareschwumm</h4>
+        <div *ngIf="data">
+          <p>D Aaretemperatur in Bärn bereit aktuell <span class="aareData">{{data.aare}} C°</span> 
+            (gmässe bir Mässstation <span class="aareData">{{data.longname}}</span>). 
+            Dr <a href="https://aare.guru/#bern" target="_blank">Aare Guru</a> 
+            meint dadrzuä: <span class="aareData">"{{data.text}}"</span>.</p>
+          <p>Dr Aare Guru brucht für ds mässe vor Aaretemperatur d Date vodä offizielle Schwizer Mässstatione vom 
+            <a href="https://www.hydrodaten.admin.ch/de/aktuelle-lage" target="_blank">BAFU</a>.
+          </p>
+        </div>
       </div>
     </div>
   </div>
